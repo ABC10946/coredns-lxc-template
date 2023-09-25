@@ -1,0 +1,18 @@
+#Corefile
+k8s.element {
+    etcd {
+        fallthrough
+        path /skydns
+        endpoint http://192.168.10.140:2379
+    }
+    errors
+    log
+
+    transfer {
+    	to *
+    }
+}
+
+. {
+    forward . /etc/resolv.conf
+}
