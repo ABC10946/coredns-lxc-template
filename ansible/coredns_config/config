@@ -15,4 +15,5 @@ k8s.element {
 
 . {
     forward . /etc/resolv.conf
+    log
 }

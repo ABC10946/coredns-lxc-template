@@ -27,3 +27,7 @@
         name: "job for coredns"
         special_time: reboot
         job: /root/coredns/coredns -conf /root/coredns/coredns_config/config
+    - name: reboot
+      command: reboot
+      async: 0
+      poll: 0
