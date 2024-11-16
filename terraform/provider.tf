@@ -10,5 +10,5 @@ terraform {
 provider "proxmox" {
 	pm_user = "terraform-prov@pve"
 	pm_password = "terraform"
-	pm_api_url = "https://uranus.element:8006/api2/json"
+	pm_api_url = "https://uranus.local:8006/api2/json"
 }

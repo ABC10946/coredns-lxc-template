@@ -5,6 +5,7 @@ resource "proxmox_lxc" "coredns" {
     password = "terraform"
     start = "true"
     memory = "2048"
+    onboot = true
 
     ssh_public_keys = <<-EOT
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE+FSXS0bBdx/+f5CqC1ecoXCg83/drtEnjutFLCf4Ao abc@einsteinium
